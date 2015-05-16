@@ -15,10 +15,8 @@
 (define-lex-abbrevs
   [string-literal
    (:: #\" (:* char-literal) #\")]
-  [char-literal1
-   (:or (:: #\\ any-char) (char-complement #\"))]
   [char-literal
-   (:or any-char #\1)])
+   (:or (:: #\\ any-char) (char-complement #\"))])
 
 (define-lex-abbrevs
   [number-literal
